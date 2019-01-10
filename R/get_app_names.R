@@ -1,4 +1,4 @@
-#' Getting data from oTree server
+#' Getting app names from otree data
 #
 #' This is the function that gets data from oTree-based server
 #' @section Url format:
@@ -14,7 +14,12 @@
 #
 #' @export
 
-
-get_data <- function(website) {
-  print(paste("Getting data from:", website))
+get_app_names <- function(df) {
+  get_first_elem <- function(x) {
+    return(unlist(strsplit(x, '[.]'))[1])
+  }
+  apps <- (unique(as.vector(sapply(
+    names(df), get_first_elem
+  ))))
+  return (sort(setdiff(apps, stop_apps)))
 }

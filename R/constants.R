@@ -1,0 +1,1 @@
+stop_apps =c('participant', 'session')
