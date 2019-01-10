@@ -1,7 +1,7 @@
 Package: otreer
 Type: Package
 Title: Downloading and analysing data from oTree experiments
-Version: 0.1.0
+Version: 0.1.1
 Author: Philipp Chapkovski <chapkovski@gmail.com>
 Maintainer: Philipp Chapkovski <chapkovski@gmail.com>
 Description: More about what it does (maybe more than one line)
